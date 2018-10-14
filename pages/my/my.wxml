@@ -1,0 +1,41 @@
+<view class='header'>
+  <view class='standard_new'>
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view class='nickname'>{{userInfo.nickName}}</view>
+  </view>
+</view>
+
+<view class='func'>
+  <navigator class='fun_li' bindtap="toMySells" url="../group/myGroup/myGroup">
+    <text class="iconfont icon-13" style="font-size:100px;color:#AB956D;margin-left:40rpx"></text>
+    <view class='txt'>group</view>
+  </navigator>
+</view>
+  <!-- <navigator class='fun_li' url="addresses">
+    <view class='mark second'></view>
+    <view class='txt'>收货地址</view>
+  </navigator>
+  <navigator class='fun_li' url="seller?userImage={{userInfo.avatarUrl}}&nickname={{userInfo.nickName}}">
+    <view class='mark third'></view>
+    <view class='txt'>个人信息</view>
+  </navigator>
+  <navigator class='fun_li' style='border:none;' url="shops">
+    <view class='mark fourth'></view>
+    <view class='txt'>我的店铺</view>
+  </navigator>
+</view> -->
+
+<view class='fun2'>
+  <!-- <view class='fun_li1'>
+    <navigator url="statistics/statistics">
+      <view class='mark fifth'></view>
+      <view class='txt'>流量统计</view>
+    </navigator>
+  </view>
+  <view class='fun_li1'>
+      <navigator url="saleService/saleService">
+    <view class='mark sixth'></view>
+    <view class='txt'>售后服务</view>
+    </navigator>
+  </view> -->
+</view>

@@ -1,0 +1,53 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.0",
+	"appid": "wxb27bd846bfec0588",
+	"projectname": "sharefavorite",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "xx",
+					"pathName": "pages/groupDetail/groupDetail",
+					"query": "",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群4",
+						"shareName": "ii7qPfRMsJxk9mKfijipweJztMpz8NBsMS7EF8teC7k@cr4dev",
+						"shareKey": "bLeP5wG0fPr51H1nVhkdyTTetc1SqmykvwHJEYA_8OXbaclZeccWUHouZ5gbUrGMWW2ygqiSZ2AyuTe74elDqQ~~"
+					}
+				}
+			]
+		}
+	}
+}

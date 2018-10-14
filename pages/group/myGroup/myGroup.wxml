@@ -1,0 +1,14 @@
+
+<view class="products-box">
+    <block wx:for="{{groupInfo}}">
+        <view class="products-item" bindtap="onProductsItemTap" data-id="{{item.groupId}}">
+            <image class="products-image" src="{{!item.image?'../../../images/group.png':item.image}}" mode="aspectFill"></image>
+            <view class="products-item-bottom">
+            <open-data type="groupName" open-gid="{{item.openGId}}" style="color:#AB956D;font-weight:900;"></open-data>
+            </view>
+        </view>
+    </block>
+</view>
+<!-- <button class="share" open-type="share" data-name="pageShare" id="share">创建群相册</button> -->
+
+

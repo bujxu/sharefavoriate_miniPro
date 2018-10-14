@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": false,
+    "navigationBarTitleText": "授权登入",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DA70D6",
+    "navigationBarTextStyle": "#ffffff"
+}

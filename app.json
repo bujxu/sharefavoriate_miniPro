@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/getUserInfo/getUserInfo",
+    "pages/template/template",
+    "pages/template/scroll/scroll",
+
+    "pages/group/group/group",
+    "pages/group/groupDetail/groupDetail",
+    "pages/group/groupCommitDetail/groupCommitDetail",
+    "pages/group/myGroup/myGroup",
+    "pages/group/myGroupCommit/myGroupCommit",
+    "pages/group/myGroupCommitNew/myGroupCommitNew"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#white",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/emoji_light.png",
+        "selectedIconPath": "./images/emoji_flash_fill.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/emoji_light.png",
+        "selectedIconPath": "./images/emoji_flash_fill.png"
+      }
+    ],
+    "borderStyle": "white",
+    "selectedColor": "#AB956D",
+    "color": "#989898",
+    "backgroundColor": "#F5F5F5"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

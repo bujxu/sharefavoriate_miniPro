@@ -1,0 +1,37 @@
+<form bindsubmit="formSubmit">
+  <view  style=" white-space: nowrap; display: flex;height:1120rpx;width:1000rpx">
+        <view wx:if="{{edit == 'true'}}" style="margin-left:2%;margin-top:2%;">
+          <textarea class="textarea" value="{{textareaValue}}" name="textareaValue" />
+          <view style="display:flex;flex-direction:row;margin-top:20rpx">
+             <text bindtap="upimg" class="iconfont icon-tianjia1" style="font-size:55px;color:#AB956D"></text>
+             <text bindtap="deleteImage" class="display:{{img_arr.length?'flex':'none'}};iconfont icon-tianjia1-copy" style="font-size:55px;color:#AB956D;margin-left:67%"></text>
+          </view>
+          
+            <swiper indicator-dots="true" bindchange="swiperChange">
+              <block wx:for="{{img_arr}}">
+                <swiper-item>
+                  <image style="width:100%;height:100%;border-radius:4px;" src='{{item}}' class="img" mode="aspectFill"></image>
+                </swiper-item>
+              </block>
+            </swiper>
+        </view>
+
+        <view wx:if="{{edit == 'false'}}" style="margin-left:2%;margin-top:2%;">
+          <textarea class="textarea" placeholder="请输入描述" name="textareaValue" />
+          <view style="display:flex;flex-direction:row;margin-top:20rpx">
+            <text bindtap="upimg" class="iconfont icon-tianjia1" style="font-size:55px;color:#AB956D"></text>
+            <text bindtap="deleteImage" class="iconfont icon-tianjia1-copy" style="display:{{img_arr.length?'flex':'none'}};font-size:55px;color:#AB956D;margin-left:67%"></text>
+          </view>
+            <swiper indicator-dots="true" bindchange="swiperChange" autoplay="{{autoplay}}" interval="{{interval}}" >
+              <block wx:for="{{img_arr}}">
+                <swiper-item>
+                  <image style="width:100%;height:100%;border-radius:4px;" src='{{item}}' class="img" mode="aspectFill"></image>
+                </swiper-item>
+              </block>
+            </swiper>
+        </view>
+  </view>
+  <button id="button" class='submit' formType="submit">提交</button>
+</form>
+<progress class="progress" style="display:{{progressDisplay}}" percent="{{progressPercent}}" stroke-width="12" color="#AB956D" active active-mode="forwards" show-info />
+<text class="iconfont icon-picture" style="display:{{!img_arr.length?'flex':'none'}};font-size:55px;color:#AB956D;position:absolute;top:60%;margin-left:42%"></text>

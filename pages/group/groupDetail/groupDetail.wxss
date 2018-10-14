@@ -1,0 +1,45 @@
+@import "../../template/scroll/scroll.wxss";
+.img_item {
+  width: 48%;
+  margin:1%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.banner-index {
+    position: absolute;
+    width: 100%;
+    bottom: 8rpx;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.img_text
+{
+  color:white;
+  font-size:34rpx;
+  text-align:center;
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height:40rpx;
+  font-weight:900;
+}
+
+.img_texts
+{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  width:100%;
+  justify-content:center;
+}
+
+.background
+{
+  background-size:100% 100%;
+  margin-top:2%;
+  border-radius:10rpx;
+}

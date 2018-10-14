@@ -1,0 +1,24 @@
+<scroll-view scroll-y="true" style="height: 1070rpx" class='box'>
+  <view wx:key="item" wx:for="{{commitList}}" class='standard_new'>
+    <view class='left box'>
+      <navigator url="../groupCommitDetail/groupCommitDetail?commitId={{item.id}}" style="display:flex;width:100%">
+        <image src='{{item.commit_images[0].image.url}}' style="border-radius:10rpx"></image>
+        <view class='left_txt'>
+          <view class='tit'>{{item.create_time}}</view>
+          <view class='stora'>{{item.content}}</view>
+        </view>
+      </navigator>
+    </view>
+    <view class='right' style="height:200rpx;margin-left:20rpx">
+      <text bindtap='bindEditGood' data-id='{{item.id}}' class="iconfont icon-bianji4" style="font-size:70rpx;color:#AB956D"></text>
+      <text bindtap='bindDeleteGood' data-id='{{item.id}}' class="iconfont icon-shanchu4" style="font-size:70rpx;color:#AB956D;margin-top:20rpx"></text>
+    </view>
+  </view>
+</scroll-view>
+
+
+<view class="add_shop_red">
+  <view class="inner_red">
+    <navigator url="../myGroupCommitNew/myGroupCommitNew?edit={{false}}&groupId={{groupId}}" class="a add_text_red" style="color:white">创建群图片</navigator>
+  </view>
+</view>

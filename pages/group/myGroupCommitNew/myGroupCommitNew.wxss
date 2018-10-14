@@ -1,0 +1,40 @@
+@import "../../lib/style/stylesheet.wxss";
+
+.textarea
+{
+    border:1px solid #e8e8e8;
+    border-radius:4px;
+    width:100%;
+}
+swiper {
+  height: 610rpx;
+  width:700rpx;
+  margin-top:40rpx;
+}
+
+.submit{
+  position: absolute;
+  width: 94%;
+  margin-left: 3%;
+  line-height: 80rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+
+#button
+{
+    background-color: #AB956D;
+}
+
+
+
+.progress
+{
+  width:95%;
+  position:absolute;
+  top:38%;
+  margin-left:3%
+}

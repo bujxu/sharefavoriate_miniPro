@@ -1,0 +1,53 @@
+@import "../lib/style/stylesheet.wxss";
+
+page {
+  background-color: white;
+}
+.header{
+  width: 100%;
+  height: 220rpx;
+  background-color: white;
+}
+
+image{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 100%;
+}
+.nickname{
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  color: black;
+}
+.func{
+  height: 179rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.func{
+  width: 100%;
+}
+.fun_li{
+  height: 179rpx;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt{
+  font-size:30rpx;
+  color: #AB956D;
+  text-align: center;
+  font-weight:900;
+  margin-left:40rpx;
+}
+
+.standard_new{
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

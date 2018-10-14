@@ -1,0 +1,16 @@
+
+<view class="products-box">
+    <block wx:for="{{classification}}">
+        <view class="products-item" bindtap="onProductsItemTap" data-index="{{index}}">
+            <view style="color:{{item.color}}">
+            <image class="products-image" src="../../images/{{item.logo}}" mode="aspectFill"></image>
+            <view class="products-item-bottom">
+            <view style="color:{{item.color}};font-weight:900;">{{item.name}}</view>
+            </view>
+            </view>
+        </view>
+    </block>
+</view>
+
+
+

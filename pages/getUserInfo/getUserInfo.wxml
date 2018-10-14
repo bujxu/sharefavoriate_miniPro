@@ -1,0 +1,7 @@
+<!--pages/getUserInfo/getUserInfo.wxml-->
+<view style="color:#DA70D6;text-align:center">
+    <image src="/images/emoji_flash_fill_DA70D6.png" style="width:50%;height:350rpx;"></image>
+    <view style='text-align:center'>share favoriate</view>
+    <view style='margin-top:100rpx'>您暂未获取微信授权,将无法使用小程序的功能.如需正常使用,请点击"授权登入"按钮,打开头像,昵称等信息的授权</view>
+    <button style="position:fixed;bottom:0;width:90%;margin-left:5%;color:#DA70D6" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>
